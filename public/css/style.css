@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navbar-gray-200 {
+    background-color: #e9ecef;
+}
+
+#header {
+  width: 100%;
+  background-color: transparent;
+  transition: background ease-out 0.2s;
+}
+
+#header.active {
+  
+  background: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.card-cardapio{
+    width: 100%;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.card-img-cardapio{
+    height: 100%;
+    width: 100%;
+}
+
+.price{
+    color: #FF8800;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.conteudo-cardapio{
+    height: 100%;
+}
+
+
+
+@media only screen and (min-width: 700px){
+    #header .navbar-collapse {
+        width: auto;
+    }
+
+    #imagem_logo{
+        margin-left: 50px;
+    }
+
+    #contato{
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        background-color: #ff8800;
+        border-style: none;
+        border-color: #333;
+        border-radius: 50px;
+        border-width: 1px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    #header #contato:hover {
+        color: #ffffff;
+        background-color: #C66300;
+    }
+}
+
+
+
+@media only screen and (max-width: 699px){
+
+    #contato{
+        /* text-align: center; */
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #000;
+        border-bottom: solid 4px transparent
+    }
+
+    #header #contato:hover {
+        color: #FF8800;
+    }
+
+    #header .nav-active-contato {
+        color: #FF8800;
+    }
+}
+
+
+#header .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    border-bottom: solid 4px transparent;
+}
+#header .nav-active {
+    color: #FF8800;
+}
+
+#header .nav-link:hover {
+  color: #FF8800;
+}
+
+.notifications {
+    font-size: 8px;
+}
+
+.botao{
+    align-items: right;
+}
+
+.cor-texto{
+    color: #FF8800;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 55px;
+}
+
+.titulo-texto{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+}
+
+.tamanho-font-col-texto{
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-texto{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.dvm-button-redondo {
+    color: #ffffff;
+    background-color: #ff8800;
+    border-style: none;
+    border-color: #333;
+    border-radius: 50px;
+    border-width: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.image-collun{
+    height: 500px;
+    width: 337px;
+}
+
+.cor-pills{
+    background-color: #F5EFE6;
+} 
+
+.image-fundo{
+    background-image:  url("folha-fundo-02.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.image-fundo-cardapio{
+    background-image: url("102.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.cor-texto-cardapio{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 55px;
+}
+
+#opacity{
+    width: 100%;
+    opacity: 0.8;
+    background-color: #ffffff;
+}
+
+.depoimento-image{
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#tacavinho{
+    color: #cf2e2e;
+    font-size: 60px;
+}
+
+.linha-horizontal {
+    width: 43%; 
+    border-top-width: 2px; 
+    border-top-color: rgb(19, 19, 19); 
+    border-top-style: solid; 
+    display: inline-block;
+    margin: 0;
+}
+
+#happy {
+    font-weight: 700;
+    font-size: 22px; 
+}
+
+#noticias {
+    font-size: 15px;
+    border-width: 1px;
+    border-color: #333333;
+    border-style: none;
+    border-radius: 50px;
+    background: #f6820a;
+    padding: 10px 36px;
+    color: #ffffff;
+}
+
+/*sobre nos*/
+
+.sobre-nos {
+    background-image: url("../image/loja-frente.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.opacite-black {
+    background-color: rgba(10,23,55,0.2);
+    width: 100%;
+    height: 100%;
+}
+
+.opacite-black-escuro {
+    background-color: rgba(10,23,55,0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.sobre-nos #title-sobre-nos {
+    font-size: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    padding-left: 100px;
+    padding-top: 200px;
+}
+
+@media only screen and (max-width: 699px){
+    .sobre-nos {
+        background-image: url("../image/loja-frente-500x500.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+
+    .sobre-nos #title-sobre-nos {
+        font-size: 80px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #ffffff;
+        padding-left: 50px;
+        padding-top: 100px;
+    }
+}
+
+.image-noticia {
+    width: 100%;
+    height: 50%;
+}
+
+.section-contato {
+    background-image: url("../image/contato.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+#title-contato {
+    font-size: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    padding-left: 100px;
+    padding-top: 200px;
+}
+
+.text-contato {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 699px){
+    .section-contato {
+        background-image: url("../image/contato-500x500.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    #title-contato {
+        font-size: 60px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #ffffff;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    .text-contato {
+        font-size: 30px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #ffffff;
+        margin-left: -50px;
+    }
+}
+
+.container-footer {
+    margin: 0 5%;
+    height: auto;
+    padding-bottom: 1px;
+}
+
+/* @media only screen and (max-width: 699px){
+    .container-footer {
+        margin: 0 5%;
+        height: 230px;
+    }
+}
+ */
