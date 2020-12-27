@@ -14,17 +14,17 @@
                     <li class="nav-item @if (\Request::route()->getName() == "home") active @endif">
                         <a class="@if (\Request::route()->getName() == "home")nav-active @endif nav-link" href="{{route("home")}}">Home</a>
                     </li>
-                    <li class="nav-item @if (\Request::route()->getName() == "home.cardapio") active @endif">
-                        <a class="@if (\Request::route()->getName() == "home.cardapio")nav-active @endif nav-link" href="{{route("home.cardapio")}}">Cardápio</a>
+                    <li class="nav-item @if (\Request::route()->getName() == "cardapio") active @endif">
+                        <a class="@if (\Request::route()->getName() == "cardapio")nav-active @endif nav-link" href="{{route("cardapio")}}">Cardápio</a>
                     </li>
-                    <li class="nav-item @if (\Request::route()->getName() == "home.quem-somos") active @endif">
-                        <a class="@if (\Request::route()->getName() == "home.quem-somos")nav-active @endif nav-link" href="{{route("home.quem-somos")}}">Quem Somos</a>
+                    <li class="nav-item @if (\Request::route()->getName() == "quem-somos") active @endif">
+                        <a class="@if (\Request::route()->getName() == "quem-somos")nav-active @endif nav-link" href="{{route("quem-somos")}}">Quem Somos</a>
                     </li>
-                    <li class="nav-item @if (\Request::route()->getName() == "home.noticias") active @endif">
-                        <a class="@if (\Request::route()->getName() == "home.noticias")nav-active @endif nav-link" href="{{route("home.noticias")}}">Notícias</a>
+                    <li class="nav-item @if (\Request::route()->getName() == "noticias") active @endif">
+                        <a class="@if (\Request::route()->getName() == "noticias")nav-active @endif nav-link" href="{{route("noticias")}}">Notícias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="@if (\Request::route()->getName() == "home.contado") nav-active-contato @endif" href="{{route("home.contado")}}" id="contato">Contato</a>
+                        <a class="@if (\Request::route()->getName() == "contado") nav-active-contato @endif" href="{{route("contado")}}" id="contato">Contato</a>
                     </li>
                 </ul>
             </div>

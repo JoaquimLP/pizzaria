@@ -19,11 +19,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/home", HomeComponent::class)->name("home");
-Route::get("/home/cardapio", CardapioComponent::class)->name("home.cardapio");
-Route::get("/home/quem-somos", QuemSomosComponent::class)->name("home.quem-somos");
-Route::get("/home/noticias", NoticiasComponent::class)->name("home.noticias");
-Route::get("/home/contado", ContatosComponent::class)->name("home.contado");
+Route::get("/cardapio", CardapioComponent::class)->name("cardapio");
+Route::get("/quem-somos", QuemSomosComponent::class)->name("quem-somos");
+Route::get("/noticias", NoticiasComponent::class)->name("noticias");
+Route::get("/contado", ContatosComponent::class)->name("contado");
+
+
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/layout', function () {
+    return view('layouts.template.layout');
+});
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
