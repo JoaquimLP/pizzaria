@@ -6,7 +6,7 @@
             <img src="{{url('image/logo-mini.svg')}}" alt="logo" /> </a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center">
-        <ul class="navbar-nav">
+        {{-- <ul class="navbar-nav">
             <li class="nav-item font-weight-semibold d-none d-lg-block">Help : +050 2992 709</li>
             <li class="nav-item dropdown language-dropdown">
                 <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" id="LanguageDropdown" href="#"
@@ -41,12 +41,12 @@
                     </a>
                 </div>
             </li>
-        </ul>
+        </ul> 
         <form class="ml-auto search-form d-none d-md-block" action="#">
             <div class="form-group">
                 <input type="search" class="form-control" placeholder="Search Here">
             </div>
-        </form>
+        </form>--}}
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link count-indicator" id="messageDropdown" href="#" data-toggle="dropdown"
