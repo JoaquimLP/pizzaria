@@ -44,7 +44,7 @@ class CreateEnderecosTable extends Migration
             $table->string('numeroFim');
             $table->unsignedBigInteger('bairro_id');
             $table->foreign('bairro_id')
-                        ->references('id')->on('bairro');
+                        ->references('id')->on('bairros');
             $table->timestamps();
         });
 
