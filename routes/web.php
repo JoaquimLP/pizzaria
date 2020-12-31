@@ -7,6 +7,9 @@ use App\Http\Livewire\NoticiasComponent;
 use App\Http\Livewire\QuemSomosComponent;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Livewire\Admin\Dashboard;
+use App\Http\Livewire\Admin\Cardapio\CategoriaComponent;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,10 +33,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/layout', function () {
-    return view('layouts.template.layout');
+
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+    Route::get("/dashboard", Dashboard::class)->name("dashboard");
+
+    /**
+     * Cardápio
+     */
+    Route::get("/cardapio/categoria", CategoriaComponent::class)->name("cardapio.categoria");
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+/* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+ */

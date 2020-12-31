@@ -38,7 +38,7 @@
             @include('layouts.template.navbar')
             <div class="container-fluid page-body-wrapper">
                 @include('layouts.template.sidebar')
-                <div class="main-panel">
+                <div class="main-panel ms-sm-auto">
                     <!--Corpo-->
                     <section>
                         @yield('body')

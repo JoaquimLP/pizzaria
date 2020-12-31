@@ -542,6 +542,14 @@
       .sidebar > .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile):not(.hover-open) > .nav-link:not([aria-expanded="true"]) .menu-arrow:before {
         color: #bfccda; }
 
+.sidebar-offcanvas {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
 /* style for off-canvas menu*/
 @media screen and (max-width: 991px) {
   .sidebar-offcanvas {
@@ -605,11 +613,15 @@
   width: calc(100% - 270px);
   min-height: calc(100vh - 63px);
   display: flex;
-  flex-direction: column; }
-  @media (max-width: 991px) {
+  margin-left: auto!important;
+  flex-direction: column; 
+}
+@media (max-width: 991px) {
     .main-panel {
       margin-left: 0;
-      width: 100%; } }
+      width: 100%; 
+    } 
+  }
 
 .content-wrapper {
   background: #F3F3F3;
