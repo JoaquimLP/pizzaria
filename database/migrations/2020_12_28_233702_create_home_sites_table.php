@@ -15,6 +15,8 @@ class CreateHomeSitesTable extends Migration
     {
         Schema::create('home_sites', function (Blueprint $table) {
             $table->id();
+            $table->string('image1')->nullable();
+            $table->string('image2')->nullable();
             $table->timestamps();
         });
     }

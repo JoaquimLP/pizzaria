@@ -15,6 +15,10 @@ class CreateDepoimentosTable extends Migration
     {
         Schema::create('depoimentos', function (Blueprint $table) {
             $table->id();
+            $table->string("nome", 50)->nullable();
+            $table->string("origen", 50)->nullable();
+            $table->string("depoimento", 255)->nullable();
+            $table->string("path", 255)->nullable();
             $table->timestamps();
         });
     }

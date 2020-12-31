@@ -15,6 +15,18 @@ class CreateEmpresasTable extends Migration
     {
         Schema::create('empresas', function (Blueprint $table) {
             $table->id();
+            $table->string('nome', 100);
+            $table->string('razao_social', 150)->nullable();
+            $table->string('cnpj', 20)->unique()->nullable();
+            $table->string('telefone', 12)->nullable();
+            $table->string('celular', 12)->nullable();
+            $table->string('endereco', 150)->nullable();
+            $table->string('cidade', 30)->nullable();
+            $table->string('estado', 30)->nullable();
+            $table->string('cep', 12)->nullable();
+            $table->string('email', 150)->unique()->nullable();
+            $table->string('link_facebook', 150)->nullable();
+            $table->string('link_instagram', 150)->nullable();
             $table->timestamps();
         });
     }
