@@ -17,7 +17,7 @@ class CreateNoticiasTable extends Migration
             $table->id();
             $table->string('title', 100)->unique();
             $table->string('resumo', 200);
-            $table->text('resumo', 1000);
+            $table->text('texto', 1000);
             $table->timestamps();
         });
     }
