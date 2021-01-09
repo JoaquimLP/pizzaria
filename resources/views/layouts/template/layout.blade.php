@@ -55,7 +55,6 @@
         <script src="{{asset('js/shared/off-canvas.js')}}"></script>
         <script src="{{asset('js/shared/misc.js')}}"></script>
         <script src="{{asset('js/demo_1/dashboard.js')}}"></script>
-        <script src="{{asset('js/shared/jquery.cookie.js')}}" type="text/javascript"></script>
 
         @livewireScripts
     </body>

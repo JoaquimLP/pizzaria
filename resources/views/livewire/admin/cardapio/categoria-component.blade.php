@@ -1,25 +1,10 @@
-<div class="container" style="height: 500px;">
-    <div class="row">
-        <div class="col-6 col-sm-6">
-            <div class="card">
-                <div class="card-header">
-                    <h1>Adicionar uma nova Categoria</h1>
-                </div>
-                <div class="card-body">
-                    
-                    <form>
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Address 1</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control">
-                            </div>
-                        </div>
-                    </form>
-                </div>
+<div class="container my-3" style="height: 500px;">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="card col-sm-5">
+                @include("livewire.admin.cardapio.categoria.$view")
             </div>
-        </div>
-        <div class="col-6 col-sm-6">
-            <div class="card">
+            <div class="card col-sm-7">
                 <div class="card-header">
                     <h1>Listar de categoria</h1>
                 </div>
@@ -29,23 +14,23 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nome</th>
+                                <th scope="col">Ações</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td >Larry the Bird</td>
-                            </tr>
+                            @foreach ($categorias as $categoria)
+                                <tr>
+                                    <td scope="row">{{$categoria->id}}</td>
+                                    <td>{{$categoria->nome}}</td>
+                                    <td>
+                                        <button wire:click="edit({{$categoria->id}})" class="btn btn-primary">Editar</button>
+                                        <button wire:click="destroy({{$categoria->id}})" class="btn btn-danger">Excluir</button>
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
+                    {{$categorias->links()}}
                 </div>
             </div>
         </div>
