@@ -18,7 +18,7 @@ class CategoriaComponent extends Component
 
     public function render()
     {
-        $categorias = Categoria::orderBy('id', 'desc')->paginate(5);
+        $categorias = Categoria::orderBy('id', 'desc')->simplePaginate(5);
         return view('livewire.admin.cardapio.categoria-component', compact('categorias'))
             ->extends('layouts.template.layout')
             ->section('body');

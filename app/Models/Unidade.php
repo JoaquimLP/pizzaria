@@ -5,10 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Ingrediente extends Model
+class Unidade extends Model
 {
     use HasFactory;
-
-    protected $fillable = ['nome', "quantidade", "categoria_id"];
-}
 }

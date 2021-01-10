@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Livewire\Admin\Dashboard;
 use App\Http\Livewire\Admin\Cardapio\CategoriaComponent;
+use App\Http\Livewire\Admin\Cardapio\IngredientesComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
      * Cardápio
      */
     Route::get("/cardapio/categoria", CategoriaComponent::class)->name("cardapio.categoria");
+    Route::get("/cardapio/ingredientes", IngredientesComponent::class)->name("cardapio.ingredientes");
 });
 
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

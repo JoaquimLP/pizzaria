@@ -18,8 +18,11 @@ class CreateIngredientesTable extends Migration
             $table->string('nome', 150)->unique();
             $table->double('quantidade', 10,2);
             $table->unsignedBigInteger('categoria_id');
+            $table->unsignedBigInteger('unidade_id');
             $table->foreign('categoria_id')
                         ->references('id')->on('categorias');
+            $table->foreign('unidade_id')
+                        ->references('id')->on('unidades');
             $table->timestamps();
         });
     }

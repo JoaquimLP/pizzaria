@@ -2,11 +2,11 @@
     <div class="col-sm-12">
         <div class="row">
             <div class="card col-sm-5">
-                @include("livewire.admin.cardapio.categoria.$view")
+                @include("livewire.admin.cardapio.ingredientes.$view")
             </div>
             <div class="card col-sm-7">
                 <div class="card-header">
-                    <h1>Listar de categoria</h1>
+                    <h1>Listar de ingrediente</h1>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered">
@@ -18,19 +18,19 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($categorias as $categoria)
+                            @foreach ($ingredientes as $ingrediente)
                                 <tr>
-                                    <td scope="row">{{$categoria->id}}</td>
-                                    <td>{{$categoria->nome}}</td>
+                                    <td scope="row">{{$ingrediente->id}}</td>
+                                    <td>{{$ingrediente->nome}}</td>
                                     <td>
-                                        <button wire:click="edit({{$categoria->id}})" class="btn btn-primary">Editar</button>
-                                        <button wire:click="destroy({{$categoria->id}})" class="btn btn-danger">Excluir</button>
+                                        <button wire:click="edit({{$ingrediente->id}})" class="btn btn-primary">Editar</button>
+                                        <button wire:click="destroy({{$ingrediente->id}})" class="btn btn-danger">Excluir</button>
                                     </td>
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
-                    {{$categorias->links()}}
+                    {{$ingredientes->links()}}
                 </div>
             </div>
         </div>
