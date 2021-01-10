@@ -35,7 +35,7 @@ class UnidadeComponent extends Component
         $unidade = Unidade::find($id);
         
         $this->nome = $unidade->nome;
-        $this->categoria_id = $unidade->id;
+        $this->unidade_id = $unidade->id;
         $this->view = "edit";
     }
 
