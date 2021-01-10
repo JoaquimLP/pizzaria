@@ -64,5 +64,19 @@
                 </ul>
             </div>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#config" aria-expanded="false" aria-controls="config">
+                <i class="menu-icon typcn typcn-document-add"></i>
+                <span class="menu-title">Configuração</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="config">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route("unidade")}}">Unidade</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
     </ul>
 </nav>

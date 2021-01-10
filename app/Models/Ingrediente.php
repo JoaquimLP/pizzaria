@@ -10,5 +10,5 @@ class Ingrediente extends Model
     use HasFactory;
 
     protected $fillable = ['nome', "quantidade", "categoria_id"];
-}
+
 }
