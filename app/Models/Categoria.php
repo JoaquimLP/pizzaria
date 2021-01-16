@@ -10,4 +10,12 @@ class Categoria extends Model
     use HasFactory;
 
     protected $fillable = ['nome'];
+
+    public function produtos(){
+        return $this->belongsTo(Produto::class);
+    }
+
+    public function ingrediente(){
+        return $this->belongsTo(Ingrediente::class);
+    }
 }

@@ -46,7 +46,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::get("/cardapio/categoria", CategoriaComponent::class)->name("cardapio.categoria");
     Route::get("/cardapio/ingredientes", IngredientesComponent::class)->name("cardapio.ingredientes");
     
-    Route::get("/cardapio/unidade", UnidadeComponent::class)->name("unidade");
+    Route::any("/cardapio/unidade", UnidadeComponent::class)->name("unidade");
 });
 
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

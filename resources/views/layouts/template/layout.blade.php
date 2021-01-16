@@ -25,6 +25,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 
         @livewireStyles
 
@@ -55,7 +56,7 @@
         <script src="{{asset('js/shared/off-canvas.js')}}"></script>
         <script src="{{asset('js/shared/misc.js')}}"></script>
         <script src="{{asset('js/demo_1/dashboard.js')}}"></script>
-
         @livewireScripts
+        @stack('script')
     </body>
 </html>
