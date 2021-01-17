@@ -3,5 +3,5 @@
 </div>
 <div class="card-body">
     @include('livewire.admin.cardapio.ingredientes.form')
-    <button wire:click="store" class="btn btn-primary">Adicionar</button>
+    <button wire:click.prevent="store" class="btn btn-primary">Adicionar</button>
 </div>

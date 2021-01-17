@@ -21,7 +21,7 @@
                         <a class="nav-link" href="{{route('cardapio.ingredientes')}}">Ingredientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produto</a>
+                        <a class="nav-link" href="{{route('cardapio.produto')}}">Produto</a>
                     </li>
                 </ul>
             </div>

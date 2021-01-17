@@ -8,17 +8,14 @@
                             <div class="col-12 my-4">
                                 <ul class="nav nav-tabs mb-3">
                                     <li class="nav-item">
-                                        <a wire:click="create" class="nav-link @if ($nav_ills != true ) active @endif  tamanho-font-col-texto text-dark" data-toggle="pill" href="#nav-item-01">{{$title}}</a>
+                                        <a class="nav-link @if ($nav_ills != true ) active @endif tamanho-font-col-texto text-dark" data-toggle="pill" href="#nav-item-02">Listar de ingrediente</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link @if ($nav_ills == true ) active @endif tamanho-font-col-texto text-dark" data-toggle="pill" href="#nav-item-02">Listar de ingrediente</a>
+                                        <a wire:click="create" class="nav-link @if ($nav_ills == true ) active @endif  tamanho-font-col-texto text-dark" data-toggle="pill" href="#nav-item-01">{{$title}}</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content bg-light" id="nav-pills-content">
-                                    <div class="tab-pane fade @if ($nav_ills != true ) show active @endif" id="nav-item-01" role="tabpanel" aria-labelledby="nav-item-01-tab">
-                                        @include("livewire.admin.cardapio.ingredientes.$view")
-                                    </div>
-                                    <div class="tab-pane fade @if ($nav_ills == true ) show active @endif" id="nav-item-02" role="tabpanel" aria-labelledby="nav-item-02-tab" style="height: 600px;">
+                                    <div class="tab-pane fade @if ($nav_ills != true ) show active @endif" id="nav-item-02" role="tabpanel" aria-labelledby="nav-item-02-tab" style="height: 600px;">
                                         <div class="card-body">
                                             <table class="table table-bordered">
                                                 <thead>
@@ -49,7 +46,10 @@
                                             </table>
                                             {{$ingredientes->links()}}
                                         </div>
-                                    </div>                                    
+                                    </div>      
+                                    <div class="tab-pane fade @if ($nav_ills == true ) show active @endif" id="nav-item-01" role="tabpanel" aria-labelledby="nav-item-01-tab">
+                                        @include("livewire.admin.cardapio.ingredientes.$view")
+                                    </div>                              
                                 </div>
                             </div>
                         </div>

@@ -35,7 +35,7 @@ class IngredientesComponent extends Component
         $this->quantidade = "";
         $this->categoria_id = "-----";
         $this->unidade_id = "-----";
-        $this->nav_ills = false;
+        $this->nav_ills = true;
         $this->title = 'Adicionar um novo Ingrediente';
         $this->view = 'create';
     }
@@ -62,7 +62,7 @@ class IngredientesComponent extends Component
         $this->quantidade = "";
         $this->categoria_id = "";
         $this->unidade_id = "";
-        $this->nav_ills = true;
+        $this->nav_ills = false;
         
     }
 
@@ -73,7 +73,7 @@ class IngredientesComponent extends Component
         $this->quantidade = $ingrediente->quantidade;
         $this->categoria_id = $ingrediente->categoria_id;
         $this->unidade_id = $ingrediente->unidade_id;
-        $this->nav_ills = false;
+        $this->nav_ills = true;
         $this->ingrediente_id = $ingrediente->id;
         $this->title = "Editar Ingrediente";
         $this->view = "edit";
@@ -92,7 +92,7 @@ class IngredientesComponent extends Component
         $this->quantidade = "";
         $this->categoria_id = "";
         $this->unidade_id = "";
-        $this->nav_ills = true;
+        $this->nav_ills = false;
         $this->view = 'create';
     }
 
@@ -101,7 +101,7 @@ class IngredientesComponent extends Component
         $this->quantidade = "";
         $this->categoria_id = "";
         $this->unidade_id = "";
-        $this->nav_ills = true;
+        $this->nav_ills = false;
         $this->title = 'Adicionar um novo Ingrediente';
         $this->view = 'create';
     }
