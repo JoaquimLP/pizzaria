@@ -12,6 +12,7 @@ use App\Http\Livewire\Admin\Cardapio\CategoriaComponent;
 use App\Http\Livewire\Admin\Cardapio\IngredientesComponent;
 use App\Http\Livewire\Admin\Cardapio\ProdutoComponent;
 use App\Http\Livewire\Admin\Unidade\UnidadeComponent;
+use App\Http\Livewire\Admin\Empresa\EmpresaComponet;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,9 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::get("/cardapio/produto", ProdutoComponent::class)->name("cardapio.produto");
     
     Route::any("/cardapio/unidade", UnidadeComponent::class)->name("unidade");
+
+    // Empresa
+    Route::get("/empresa", EmpresaComponet::class)->name("empresa");
 });
 
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

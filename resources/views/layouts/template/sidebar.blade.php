@@ -33,7 +33,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{route('empresa')}}">
                 <i class="menu-icon typcn typcn-shopping-bag"></i>
                 <span class="menu-title">Dados da Empresa</span>
             </a>
