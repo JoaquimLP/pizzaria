@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 #header.active {
-  
+
   background: #fff;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   z-index: 9999;
@@ -164,7 +164,7 @@ body {
 
 .cor-pills{
     background-color: #F5EFE6;
-} 
+}
 
 .image-fundo{
     background-image:  url("folha-fundo-02.jpg");
@@ -172,7 +172,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-   
+
 }
 .image-fundo-cardapio{
     background-image: url("102.jpg");
@@ -180,7 +180,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-   
+
 }
 
 .cor-texto-cardapio{
@@ -207,17 +207,17 @@ body {
 }
 
 .linha-horizontal {
-    width: 43%; 
-    border-top-width: 2px; 
-    border-top-color: rgb(19, 19, 19); 
-    border-top-style: solid; 
+    width: 43%;
+    border-top-width: 2px;
+    border-top-color: rgb(19, 19, 19);
+    border-top-style: solid;
     display: inline-block;
     margin: 0;
 }
 
 #happy {
     font-weight: 700;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
 #noticias {
@@ -340,6 +340,14 @@ body {
     margin: 0 5%;
     height: auto;
     padding-bottom: 1px;
+}
+
+.btn-image {
+    cursor: pointer !important;
+}
+
+.btn-image:hover {
+    border: 5px solid rgb(24, 24, 24) !important;
 }
 
 /* @media only screen and (max-width: 699px){

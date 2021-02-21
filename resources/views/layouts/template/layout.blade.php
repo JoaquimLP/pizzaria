@@ -23,6 +23,8 @@
         <!-- End Layout styles -->
         <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}"/>
 
+        <link href="{{asset('css/style.css')}}" rel="stylesheet">
+
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>

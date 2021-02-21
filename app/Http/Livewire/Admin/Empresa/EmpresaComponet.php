@@ -64,7 +64,7 @@ class EmpresaComponet extends Component
             "nome" => "required|min:3|max:150",
             "razao_social" => "required|min:3|max:150",
             "cnpj" => "required|max:18",
-            "telefone" => "required|max:14",
+            "telefone" => "required|max:15",
             "celular" =>  "required|max:15",
             "endereco" => "nullable|min:3|max:255",
             "cidade" => "nullable|min:3|max:50",
@@ -179,7 +179,7 @@ class EmpresaComponet extends Component
             "nome" => "required|min:3|max:150",
             "razao_social" => "required|min:3|max:150",
             "cnpj" => "required|max:18",
-            "telefone" => "required|max:14",
+            "telefone" => "required|max:15",
             "celular" =>  "required|max:15",
             "endereco" => "nullable|min:3|max:255",
             "cidade" => "nullable|min:3|max:50",
@@ -193,10 +193,10 @@ class EmpresaComponet extends Component
             "link_instagram" => "nullable|min:3|max:150",
             'logo' => 'nullable|image', // 1MB Max
         ]);
-
+        
         $this->cnpj = str_replace(['.', '/', '-'], '', $this->cnpj);
-        $this->telefone = str_replace(['(', ')', '-'], '', $this->telefone);
-        $this->celular = str_replace(['(', ')', '-'], '', $this->celular);
+        $this->telefone = str_replace(['(', ')', ' ', '-'], '', $this->telefone);
+        $this->celular = str_replace(['(', ')', ' ', '-'], '', $this->celular);
         $this->cep = str_replace(['-'], '', $this->cep);
 
         $logo = $empresa->logo;

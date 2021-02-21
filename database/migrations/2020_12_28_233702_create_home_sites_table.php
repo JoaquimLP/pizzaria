@@ -18,12 +18,12 @@ class CreateHomeSitesTable extends Migration
             $table->string('image1')->nullable();
             $table->string('image2')->nullable();
             $table->string('image3')->nullable();
-            $table->string('titulo-isntituicional', 50)->nullable();
-            $table->string('subtitulo-isntituicional', 50)->nullable();
-            $table->string('descricao-isntituicional', 150)->nullable();
+            $table->string('titulo_isntituicional', 50)->nullable();
+            $table->string('subtitulo_isntituicional', 50)->nullable();
+            $table->text('descricao_isntituicional', 1000)->nullable();
             $table->string('titulo', 50)->nullable();
             $table->string('subtitulo', 50)->nullable();
-            $table->string('descricao', 150)->nullable();
+            $table->text('descricao', 1000)->nullable();
             $table->timestamps();
         });
     }

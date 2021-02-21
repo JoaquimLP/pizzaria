@@ -13,6 +13,7 @@ use App\Http\Livewire\Admin\Cardapio\IngredientesComponent;
 use App\Http\Livewire\Admin\Cardapio\ProdutoComponent;
 use App\Http\Livewire\Admin\Unidade\UnidadeComponent;
 use App\Http\Livewire\Admin\Empresa\EmpresaComponet;
+use App\Http\Livewire\Admin\Home\HomeSiteComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,11 +49,14 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::get("/cardapio/categoria", CategoriaComponent::class)->name("cardapio.categoria");
     Route::get("/cardapio/ingredientes", IngredientesComponent::class)->name("cardapio.ingredientes");
     Route::get("/cardapio/produto", ProdutoComponent::class)->name("cardapio.produto");
-    
+
     Route::any("/cardapio/unidade", UnidadeComponent::class)->name("unidade");
 
     // Empresa
     Route::get("/empresa", EmpresaComponet::class)->name("empresa");
+
+    // adicionar dados na home
+    Route::get("/home-site", HomeSiteComponent::class)->name("home.site");
 });
 
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

@@ -27,7 +27,7 @@ function maskTelefone($val)
     $dados = strlen($val);
 
     if ($dados == 11 ) {
-        $mask = '(##)#####-####';
+        $mask = '(##) #####-####';
         for ($i = 0; $i <= strlen($mask) - 1; ++$i) {
             if ($mask[$i] == '#') {
                 if (isset($val[$k])) {
@@ -40,7 +40,7 @@ function maskTelefone($val)
             }
         }
     } else {
-        $mask = '(##)####-####';
+        $mask = '(##) ####-####';
         for ($i = 0; $i <= strlen($mask) - 1; ++$i) {
             if ($mask[$i] == '#') {
                 if (isset($val[$k])) {
