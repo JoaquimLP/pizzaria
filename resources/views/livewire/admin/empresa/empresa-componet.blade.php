@@ -10,14 +10,16 @@
                                     <li class="nav-item">
                                         <a class="nav-link @if ($nav_ills != true ) active @endif tamanho-font-col-texto text-dark" data-toggle="pill" href="#nav-item-02">Infomações da empresa</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a wire:click="create" class="nav-link @if ($nav_ills == true ) active @endif  tamanho-font-col-texto text-dark" data-toggle="pill" href="#nav-item-01">{{$title}}</a>
-                                    </li>
+                                    @if ($nav_edit != true )
+                                        <li class="nav-item">
+                                            <a class="nav-link @if ($nav_ills == true ) active @endif  tamanho-font-col-texto text-dark" data-toggle="pill" href="#nav-item-01">{{$title}}</a>
+                                        </li>
+                                    @endif
                                 </ul>
                                 <div class="tab-content bg-light" id="nav-pills-content">
                                     <div class="tab-pane fade @if ($nav_ills != true ) show active @endif" id="nav-item-02" role="tabpanel" aria-labelledby="nav-item-02-tab" style="height: 600px;">
                                         <div class="card-body">
-                                            em desenvolvimento
+                                            @include("livewire.admin.empresa.show")
                                         </div>
                                     </div>
                                     <div class="tab-pane fade @if ($nav_ills == true ) show active @endif" id="nav-item-01" role="tabpanel" aria-labelledby="nav-item-01-tab">

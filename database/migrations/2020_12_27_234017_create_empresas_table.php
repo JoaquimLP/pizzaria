@@ -22,11 +22,15 @@ class CreateEmpresasTable extends Migration
             $table->string('celular', 12)->nullable();
             $table->string('endereco', 150)->nullable();
             $table->string('cidade', 30)->nullable();
+            $table->string('bairro', 30)->nullable();
             $table->string('estado', 30)->nullable();
             $table->string('cep', 12)->nullable();
+            $table->string('numero', 12)->nullable();
+            $table->string('complemento', 50)->nullable();
             $table->string('email', 150)->unique()->nullable();
             $table->string('link_facebook', 150)->nullable();
             $table->string('link_instagram', 150)->nullable();
+            $table->string('logo')->nullable();
             $table->timestamps();
         });
     }

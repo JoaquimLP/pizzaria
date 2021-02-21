@@ -16,9 +16,9 @@
         <link rel="stylesheet" href="{{asset('vendor/iconfonts/flag-icon-css/css/flag-icon.min.css')}}">
         <link rel="stylesheet" href="{{asset('vendor/css/vendor.bundle.base.css')}}">
         <link rel="stylesheet" href="{{asset('vendor/css/vendor.bundle.addons.css')}}">
-     
+
         <link rel="stylesheet" href="{{asset('css/shared/style.css')}}">
-    
+
         <link rel="stylesheet" href="{{asset('css/demo_1/style.css')}}">
         <!-- End Layout styles -->
         <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}"/>
@@ -50,7 +50,8 @@
 
             @stack('modals')
         </div>
-
+         <!-- Adicionando JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="{{asset('vendor/js/vendor.bundle.base.js')}}"></script>
         <script src="{{asset('vendor/js/vendor.bundle.addons.js')}}"></script>
         <script src="{{asset('js/shared/off-canvas.js')}}"></script>
