@@ -12,6 +12,6 @@ class HomeSite extends Model
     protected $fillable =
     [
         "image1", "image2", "image3", "titulo_isntituicional", "subtitulo_isntituicional", "descricao_isntituicional",
-        "titulo", "subtitulo", "descricao",
+        "titulo", "subtitulo", "descricao", "detalhes_isntituicional",
     ];
 }

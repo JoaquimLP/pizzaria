@@ -21,6 +21,7 @@ class CreateHomeSitesTable extends Migration
             $table->string('titulo_isntituicional', 50)->nullable();
             $table->string('subtitulo_isntituicional', 50)->nullable();
             $table->text('descricao_isntituicional', 1000)->nullable();
+            $table->text('detalhes_isntituicional', 1000)->nullable();
             $table->string('titulo', 50)->nullable();
             $table->string('subtitulo', 50)->nullable();
             $table->text('descricao', 1000)->nullable();
