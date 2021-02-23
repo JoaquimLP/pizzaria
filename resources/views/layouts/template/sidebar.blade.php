@@ -50,16 +50,16 @@
                         <a class="nav-link" href="{{route("home.site")}}">Página Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Página Contato</a>
+                        <a class="nav-link" href="{{route("home.site.contato")}}">Página Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quem somos</a>
+                        <a class="nav-link" href="{{route("home.site.sobre")}}">Quem somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Banners</a>
+                        <a class="nav-link" href="{{route("home.site.banner")}}">Banners</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Notícias</a>
+                        <a class="nav-link" href="{{route("home.site.noticia")}}">Notícias</a>
                     </li>
                 </ul>
             </div>

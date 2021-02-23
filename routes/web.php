@@ -14,6 +14,10 @@ use App\Http\Livewire\Admin\Cardapio\ProdutoComponent;
 use App\Http\Livewire\Admin\Unidade\UnidadeComponent;
 use App\Http\Livewire\Admin\Empresa\EmpresaComponet;
 use App\Http\Livewire\Admin\Home\HomeSiteComponent;
+use App\Http\Livewire\Admin\Site\BannerSiteComponent;
+use App\Http\Livewire\Admin\Site\ContatosSiteComponent;
+use App\Http\Livewire\Admin\Site\NoticiaSiteComponent;
+use App\Http\Livewire\Admin\Site\SobreSiteComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,8 +59,12 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     // Empresa
     Route::get("/empresa", EmpresaComponet::class)->name("empresa");
 
-    // adicionar dados na home
+    // site
     Route::get("/home-site", HomeSiteComponent::class)->name("home.site");
+    Route::get("/contato-site", ContatosSiteComponent::class)->name("home.site.contato");
+    Route::get("/sobre-site", SobreSiteComponent::class)->name("home.site.sobre");
+    Route::get("/banner-site", BannerSiteComponent::class)->name("home.site.banner");
+    Route::get("/noticia-site", NoticiaSiteComponent::class)->name("home.site.noticia");
 });
 
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
