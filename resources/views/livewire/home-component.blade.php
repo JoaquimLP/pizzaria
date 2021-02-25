@@ -1,24 +1,36 @@
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active" data-interval="2000">
-            <img src="{{url("image/01.jpg")}}" class="d-block w-100" alt="...">
+            @if (!empty($banner->foto_banners1))
+                <img src="{{url("storage/{$banner->foto_banners1}")}}" class="d-block w-100" alt="...">
+            @else
+                <img src="{{url("image/sem-image.jpg")}}" class="d-block w-100" alt="...">
+            @endif
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>{{$banner->title_banners1 ?? "Não informado"}}</h5>
+                <p class="text-white">{{$banner->legenda_banners1 ?? "Não informado"}}</p>
             </div>
         </div>
         <div class="carousel-item" data-interval="2000">
-            <img src="{{url("image/02.jpg")}}" class="d-block w-100" alt="...">
+            @if (!empty($banner->foto_banners2))
+                <img src="{{url("storage/{$banner->foto_banners2}")}}" class="d-block w-100" alt="...">
+            @else
+                <img src="{{url("image/sem-image.jpg")}}" class="d-block w-100" alt="...">
+            @endif
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>{{$banner->title_banners2 ?? "Não informado"}}</h5>
+                <p class="text-white">{{$banner->legenda_banners2 ?? "Não informado"}}</p>
             </div>
         </div>
         <div class="carousel-item" data-interval="2000">
-            <img src="{{url("image/03.jpg")}}" class="d-block w-100" alt="...">
+            @if (!empty($banner->foto_banners3))
+                <img src="{{url("storage/{$banner->foto_banners3}")}}" class="d-block w-100" alt="...">
+            @else
+                <img src="{{url("image/sem-image.jpg")}}" class="d-block w-100" alt="...">
+            @endif
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>{{$banner->title_banners3 ?? "Não informado"}}</h5>
+                <p class="text-white">{{$banner->legenda_banners3 ?? "Não informado"}}</p>
             </div>
         </div>
     </div>
