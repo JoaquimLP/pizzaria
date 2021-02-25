@@ -16,11 +16,13 @@ class CreateSobresTable extends Migration
         Schema::create('sobres', function (Blueprint $table) {
             $table->id();
             $table->string('title', 100);
-            $table->text('paragrafo1', 300);
-            $table->text('paragrafo2', 300);
-            $table->text('paragrafo3', 300);
-            $table->text('paragrafo4', 300);
-            $table->text('paragrafo5', 300);
+            $table->string('subtittulo', 100)->nullable();
+            $table->text('paragrafo1', 300)->nullable();
+            $table->text('paragrafo2', 300)->nullable();
+            $table->text('paragrafo3', 300)->nullable();
+            $table->text('paragrafo4', 300)->nullable();
+            $table->text('paragrafo5', 300)->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

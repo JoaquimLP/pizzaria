@@ -26,9 +26,9 @@ class HomeSiteComponent extends Component
 
     public function store(){
         $this->validate([
-            "image1" => 'required|image|max:1024',
-            "image2" => 'required|image',
-            "image3" => 'required|image',
+            "image1" => 'nullable|image|max:1024',
+            "image2" => 'nullable|image',
+            "image3" => 'nullable|image',
             "titulo_isntituicional" => "required|min:3|max:50",
             "subtitulo_isntituicional" => "required|min:3|max:50",
             "descricao_isntituicional" => "required|min:3|max:150",

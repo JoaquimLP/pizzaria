@@ -6,6 +6,8 @@ use Livewire\Component;
 
 class ContatosSiteComponent extends Component
 {
+    public $view = "create";
+    
     public function render()
     {
         return view('livewire.admin.site.contatos-site-component')
