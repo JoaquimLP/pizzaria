@@ -17,7 +17,15 @@ class CreateNoticiasTable extends Migration
             $table->id();
             $table->string('title', 100)->unique();
             $table->string('resumo', 200);
-            $table->text('texto', 1000);
+            $table->string('autor', 200);
+            $table->text('paragrafo1', 300)->nullable();
+            $table->text('paragrafo2', 300)->nullable();
+            $table->text('paragrafo3', 300)->nullable();
+            $table->text('paragrafo4', 300)->nullable();
+            $table->text('paragrafo5', 300)->nullable();
+            $table->date("data_encerramento")->nullable();
+            $table->string('link_outro_site')->nullable();
+            $table->enum("publicar", ["S", "N"])->nullable();
             $table->timestamps();
         });
     }

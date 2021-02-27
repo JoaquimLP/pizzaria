@@ -50,7 +50,7 @@
                         <a class="nav-link" href="{{route("home.site")}}">Página Home</a>
                     </li>
                    <li class="nav-item">
-                        <a class="nav-link" href="{{-- {{route("home.site.depoimento")}} --}}">Depoimentos</a>
+                        <a class="nav-link" href="{{route("home.site.depoimento")}}">Depoimentos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route("home.site.sobre")}}">Quem somos</a>

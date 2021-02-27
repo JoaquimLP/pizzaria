@@ -43,10 +43,10 @@
                                             </table>
                                             {{$produtos->links()}}
                                         </div>
-                                    </div>      
+                                    </div>
                                     <div class="tab-pane fade @if ($nav_ills == true ) show active @endif" id="nav-item-01" role="tabpanel" aria-labelledby="nav-item-01-tab">
                                         @include("livewire.admin.cardapio.produto.$view")
-                                    </div>                              
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
 </div>
 
 @push('script')
-    <script>    
+    <script>
         function k(i) {
             var v = i.value.replace(/\D/g,'');
             v = (v/100).toFixed(2) + '';
@@ -69,4 +69,4 @@
         }
 
     </script>
-@endpush 
+@endpush

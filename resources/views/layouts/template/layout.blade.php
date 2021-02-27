@@ -26,6 +26,7 @@
         <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}"/>
 
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
+        <link href="{{asset('css/global.css')}}" rel="stylesheet">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">

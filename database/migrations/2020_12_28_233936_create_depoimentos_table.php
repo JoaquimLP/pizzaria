@@ -17,8 +17,8 @@ class CreateDepoimentosTable extends Migration
             $table->id();
             $table->string("nome", 50)->nullable();
             $table->string("origen", 50)->nullable();
-            $table->string("depoimento", 255)->nullable();
-            $table->string("path", 255)->nullable();
+            $table->text("depoimento")->nullable();
+            $table->string("path")->nullable();
             $table->timestamps();
         });
     }

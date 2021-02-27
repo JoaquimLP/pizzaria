@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Depoimento extends Model
 {
     use HasFactory;
+
+    protected $fillable = ["nome", "origen", "depoimento", "path"];
 }
